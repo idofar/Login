@@ -1,0 +1,15 @@
+https://phoenixnap.com/kb/mysql-docker-container
+password:
+6@1vvy.c4f_Q7UEuW_k#3fa8?*RKL89,
+
+
+add react part:
+https://blog.miguelgrinberg.com/post/how-to-create-a-react--flask-project
+1. create react project.
+2. add to package.json: "proxy": "http://localhost:5000"
+   so to redirect any requests it receives on its port 3000 that it does not
+   understand into another server.
+3. yarn manages the react appliaction. add the flask server to be managed with
+   yarn:
+   add to package.json in the "scripts" section right after "start":
+   "start-api": "cd api && venv/bin/flask run --no-debugger",
